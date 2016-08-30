@@ -16,7 +16,7 @@ For example, the [agencies endpoint](#agencies) would be queried at https://plat
 
 #### HTTP verbs
 
-The API uses standard HTTP verbs as part of the uniform interface and must be used in combination with the resource URIs in order to describe the requested action.
+The API uses standard HTTP verbs as part of the uniform interface and must be used in combination with the resource URLs in order to describe the requested action.
 
 | Verb | Description |
 | :-------- | :---------- |
@@ -83,7 +83,7 @@ Using client credentials one can make requests against the _security token servi
 
 #### Security token endpoint
 
-The following is the full URI endpoint used to retrieve a token.
+The following is the full URL endpoint used to retrieve a token.
 
 `https://identity.whereismytransport.com/connect/token`
 
@@ -236,7 +236,7 @@ POST api/journeys/8GYKddjcAk6j7aVUAMV3pw?exclude=geometry,directions
 
 All retrievable entities from the API constitute scheduled data. This means that entities may change over time. They may not even exist forever. An agency, for example, may schedule a line's name to change, not now, but only after a certain date.  A new stop could be scheduled to only be returned from the API at some given date. 
 
-The important thing to note that is an entity could be deprecated in a future schedule. This means that any entity resource URI could return a **404 Not Found** [status code](#http-status-codes). Furthermore, new entities could be added at any point. Applications built on this API are highly encouraged to cater for this.
+The important thing to note that is an entity could be deprecated in a future schedule. This means that any entity resource URL could return a **404 Not Found** [status code](#http-status-codes). Furthermore, new entities could be added at any point. Applications built on this API are highly encouraged to cater for this.
 
 ### Pagination 
 
